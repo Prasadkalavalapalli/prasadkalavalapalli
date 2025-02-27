@@ -11,7 +11,8 @@ const projects = [
       "Course enrollment management",
       "Schedules and student tracking",
       "Role-based access control (RBAC) for security"
-    ]
+    ],
+    link:"https://kr-institutes.vercel.app/Home"
   },
   {
     title: "Employee Management System",
@@ -23,12 +24,16 @@ const projects = [
       "Attendance tracking",
       "Performance evaluations",
       "Integrated reporting & analytics"
-    ]
+    ],
+    link:""
   }
 ];
 
 const Projects = () => {
   return (
+    <>
+    <div className="dammyheader">
+    </div>
     <div className="projects-container">
       <h2 className="page-title">🚀 My Projects</h2>
       <div className="projects-list">
@@ -50,10 +55,11 @@ const Projects = () => {
                 <li key={i}> {feature}</li>
               ))}
             </ul>
+            <button className="btn btn-warning px-3"><a href={project.link} target="_blank" style={{ textDecoration: "none" }}>View Project</a> </button>
           </div>
         ))}
       </div>
-    </div>
+    </div></>
   );
 };
 

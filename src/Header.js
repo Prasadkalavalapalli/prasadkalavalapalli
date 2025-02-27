@@ -13,7 +13,7 @@ function Header() {
   return (
     <>
     <div className="header">
-    <h1 className="heading"> My Portfolio </h1>
+    <p className="heading"> Kalavalaplli Appala Durga Prasad </p>
       {tabs.map((tab) => (
         <NavLink
           key={tab.path}

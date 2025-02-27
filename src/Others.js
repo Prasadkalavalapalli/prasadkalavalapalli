@@ -18,33 +18,29 @@ function Others() {
              "description": "Achieved academic success in Secondary School Certificate (SSC) from Grace English Medium High School, Yellamanchilli, Andhra Pradesh, in March 2019. Scored an impressive grading point of 9.3, reflecting dedication and hard work during formative educational years."
           }
       ]
-      const Hobbies=[
-          {
-            "name": "WEB DESIGNING",
-            "description": "Passionate about creating and optimizing user-friendly websites. This involves understanding user experience (UX) principles and utilizing design tools to build aesthetically pleasing and functional websites.",
-            "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpNXmbFF_BkUr-K_--2TKJlqoc937lw9DRxA&s"
-          },
-          {
-            "name": "TV SHOWS",
-            "description": "Exploring a variety of genres for entertainment and cultural insights. Watching TV shows can broaden perspectives and foster discussions about different societal themes.",
-            "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcKxld6vO0fOKM5aOv_tTDJK-QdRQeoKl8bA&s"
-          },
-          {
-            "name": "PROGRAMMING",
-            "description": "Continuously learning new frontend frameworks and technologies through personal projects. This hobby allows for creativity in coding and problem-solving, as well as staying updated with the latest industry trends.",
-            "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRERSPeeMCOF4_mYdbly09WFEGXhCwy_ARVxw&s"
-          },
-          {
-            "name": "BROWSING THE INTERNET",
-            "description": "Keeping up-to-date with the latest trends and technologies in web development. This hobby serves as an essential tool for personal growth and professional development.",
-            "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNZK7Cc0jv2A_SwUo-SgzfG3hjpe15wenIbg&s"
-          },
-          {
-            "name": "FARMING",
-            "description": "Practicing sustainable agriculture and spending time in nature. This hobby not only contributes to environmental sustainability but also provides a therapeutic escape from urban life.",
-            "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv2r50-7ARMwlhX8QVLe0V8yypsy0vPiCZdg&s"
-          }
-      ]
+      const  Hobbies = [
+        {
+          "name": "WEB DESIGNING",
+          "description": "Passionate about creating and optimizing user-friendly websites. Focused on UX principles and aesthetic designs.",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpNXmbFF_BkUr-K_--2TKJlqoc937lw9DRxA&s"
+        },
+        {
+          "name": "TV SHOWS",
+          "description": "Enjoy exploring various genres for entertainment. TV shows provide insights into different cultures and perspectives.",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcKxld6vO0fOKM5aOv_tTDJK-QdRQeoKl8bA&s"
+        },
+        {
+          "name": "PROGRAMMING",
+          "description": "Learning new frontend frameworks through projects. Helps enhance creativity, coding skills, and problem-solving abilities.",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRERSPeeMCOF4_mYdbly09WFEGXhCwy_ARVxw&s"
+        },
+        {
+          "name": "FARMING",
+          "description": "Practicing sustainable agriculture and connecting with nature. A refreshing escape from urban life and digital screens.",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv2r50-7ARMwlhX8QVLe0V8yypsy0vPiCZdg&s"
+        }
+      ];
+      
       const Strengths=[
           {
             "name": "LOYALTY",
@@ -63,24 +59,25 @@ function Others() {
             "description": "Facilitates effective collaboration and understanding among team members, ensuring clarity in all interactions."
           }
         ]
-      const Certificate=[
+        const Certificate = [
           {
             "name": "FULL STACK WEB DEVELOPMENT - QUALITY THOUGHT",
-            "description": "This certification focuses on both front-end and back-end development, equipping learners with the skills necessary to build complete web applications from scratch. Participants learn various programming languages and frameworks, ensuring a comprehensive understanding of the web development landscape."
+            "description": "Covers front-end and back-end development, enabling learners to build complete web applications using modern frameworks."
           },
           {
             "name": "RESPONSIVE WEB DESIGN - FREECODECAMP",
-            "description": "This certification emphasizes the principles of responsive design, teaching participants how to create websites that function seamlessly across various devices. It covers essential topics like CSS, media queries, and mobile-first design strategies."
+            "description": "Teaches responsive design principles, CSS, and media queries to create websites that adapt to different devices."
           },
           {
             "name": "WEB DESIGN & DEVELOPMENT - SKILL INDIA DIGITAL HUB",
-            "description": "This certification provides a holistic approach to web design and development, covering both aesthetic design principles and technical development skills. It aims to empower learners with the ability to create user-friendly websites that are visually appealing and functionally robust."
+            "description": "Combines design and development skills to create user-friendly, visually appealing, and functional websites."
           },
           {
             "name": "WEB DESIGNING - ANUDIP FOUNDATION",
-            "description": "Focusing on the fundamentals of web design, this certification equips participants with the tools to create engaging and interactive websites. It covers topics such as graphic design, user experience, and the importance of web accessibility."
+            "description": "Focuses on web design fundamentals, covering graphic design, user experience, and web accessibility."
           }
-      ]  
+        ];
+        
       const Skills=[
         {
           "name": "Frontend Technologies",
@@ -104,38 +101,12 @@ function Others() {
         }
       ]
   return (
-    <div>
-    <div className='education'>
-      <h3 className='text-success  ms-5'>EDUCATIONAL BACKGROUND </h3>
-        <div className='education-main'>
-            {
-        Education.map((Element,index)=>
-            <div key={index} className='education-sub'>
-                {/* <img src={Element.image} alt="Sorry img is Deleted....!"/> */}
-            <h4 >{Element.name}</h4>
-            <p>{Element.description}</p>
-            </div>
-        )}
-       </div>  
-    </div>
-   
-     {/* CERTIFICATIONS */}
-   
-     <div className='certificate'>
-    <h3 className='text-success  ms-5'>CERTIFICATIONS</h3>
-        <div className='certificate-sub'>
-       { Certificate.map((Element,index)=>
-          <div key={index} className='certificates'>
-              {/* <img src={Element.image_url} alt="Sorry img is Deleted....!"/> */}
-          <h5>{Element.name}</h5>
-          <p>{Element.description}</p>
-          </div>)}
-          </div>
-    </div>
-
-     {/* skills */}
+    <div className='others'>
+      <div className="dammyheader">
+      </div>
+      {/* skills */}
      <div className='skills'>
-      <h3 className='skills-main'>SKILLS</h3>
+      <h3 className='text-success  text-center  py-3'>SKILLS</h3>
       {
         Skills.map((Element,index)=>
           <div key={index} className='ms-5 text-primary'>
@@ -144,10 +115,31 @@ function Others() {
           </div>)
       }
      </div>
-     
+    <div className='education'>
+      {/* CERTIFICATIONS */}
+        {/* <div className='certificate'className='certificate'> */}
+    <h3  className='text-success  text-center  py-5'>CERTIFICATIONS</h3>
+        <div className='certificate-sub'>
+       { Certificate.map((Element,index)=>
+          <div key={index} className='certificates'>
+              {/* <img src={Element.image_url} alt="Sorry img is Deleted....!"/> */}
+          <h5>{Element.name}</h5>
+          <p>{Element.description}</p>
+          </div>)} </div>
+          <h3 className='text-success  text-center  py-3'>EDUCATIONAL BACKGROUND </h3>
+        <div className='education-main'>
+            {
+        Education.map((Element,index)=>
+            <div key={index} className='education-sub'>
+                {/* <img src={Element.image} alt="Sorry img is Deleted....!"/> */}
+            <h4 >{Element.name}</h4>
+            <p>{Element.description}</p>
+            </div>
+        )}</div>
+    </div>
      {/* Strengths */}
      <div >
-    <h3 className='text-success  ms-5'>STRENGTHS</h3>
+    <h3 className='text-success  text-center  py-3'>STRENGTHS</h3>
         <div className='strength'>
        {Strengths.map((Element,index)=>
           <div key={index} className='strength-sub'>
@@ -158,8 +150,7 @@ function Others() {
     </div>
     {/* Hobbies */}
     <div>
-    <h3 className='text-success  ms-5'>HOBBIES</h3>
-      
+    <h3 className='text-success  text-center  py-3'>HOBBIES</h3>
         <div className='hobbies-card'>
        { Hobbies.map((Element,index)=>
           <div key={index} className='hobbies-main'>
