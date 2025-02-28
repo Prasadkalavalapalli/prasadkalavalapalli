@@ -5,29 +5,28 @@ function Header() {
   const tabs = [
     { name: "Home", path: "/" },
     { name: "About Us", path: "/about" },
-    { name: "Contact Us", path: "/contact" },
     { name: "Projects", path: "/projects" },
-    { name: "More Details", path: "/details" }
+    { name: "Contact Us", path: "/contact" },
+    { name: "More Details", path: "/details" },
   ];
 
   return (
     <>
-    <div className="header">
-    <p className="heading"> Kalavalaplli Appala Durga Prasad </p>
-      {tabs.map((tab) => (
-        <NavLink
-          key={tab.path}
-          to={tab.path}
-          style={{ textDecoration: "none", marginRight: "10px" }}
-        >
-          {({ isActive }) => (
-            <button className={isActive ? "tab" : "tabs"}>
-              {tab.name}
-            </button>
-          )}
-        </NavLink>
-      ))}
-    </div></>
+      <div className="header">
+        <p className="heading"> Kalavalaplli Appala Durga Prasad </p>
+        {tabs.map((tab) => (
+          <NavLink
+            key={tab.path}
+            to={tab.path}
+            style={{ textDecoration: "none", marginRight: "10px" }}
+          >
+            {({ isActive }) => (
+              <button className={isActive ? "tab" : "tabs"}>{tab.name}</button>
+            )}
+          </NavLink>
+        ))}
+      </div>
+    </>
   );
 }
 
