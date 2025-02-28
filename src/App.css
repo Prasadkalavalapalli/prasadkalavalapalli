@@ -411,6 +411,9 @@ h2 {
   margin-left: 8px;
   background-color:none;
 }
+.contact a{
+  text-decoration: none;
+}
 /* Mobile View (Max Width 768px) */
 @media screen and (max-width: 768px) {
   .header {
