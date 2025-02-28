@@ -21,8 +21,8 @@ Visakhapatnam, Andhra Pradesh - 531061
 
 <strong>📞 Phone:</strong> 9987654321 | 8688113655<br/>
 <strong>📧 Email:</strong><span ><a href="mailto:prasadkalavapalli70@gmail.com">
-                prasadkalavapalli70@gmail.com</a><br/>
-               </span ><span className='ms-5 ps-4'><a href="mailto:prasadkalavalpalli70@gmail.com">
+                prasadkalavapalli70@gmail.com</a>
+               </span ><br/><span className='ms-5 ps-4'><a href="mailto:prasadkalavalpalli70@gmail.com">
                prasadkalavalpalli70@gmail.com</a></span><br/>
 
 <strong>💬 Send a Message:</strong>
